@@ -1,9 +1,24 @@
 <html>
-  <header>
+  <head>
     <link rel="stylesheet" href="style.css">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.0/bootstrap.min.js"></script>
     <script src="func.js"></script>
-  </header>
+    <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//harrypottermoviepicker.com/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+  </head>
   <body background="media/hpb.jpg">
     <center>
       <div id="movie-desc">
@@ -12,8 +27,8 @@
     </center>
     <div style="position:absolute;top:710px;right:50%;-webkit-transform: translate(50%, 0)">
       <a href="#" class="myButton" onclick="unhide(this,'movie-desc')">Pick a movie for me</a><br>
-      Follow me on <a href="https://letterboxd.com/riley_snyder/">letterboxd</a>.<br>
-      View this site on <a href="https://github.com/Mr-Schneider/harry-potter-picker">github</a>.
+      <a class="myButton" href="https://letterboxd.com/riley_snyder/">Follow me on letterboxd</a><br>
+      <a class="myButton" href="https://github.com/Mr-Schneider/harry-potter-picker">View this site on github</a>
     </div>
   </body>
 </html>
